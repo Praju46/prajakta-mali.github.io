@@ -1,60 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Prajakta Mali | Research Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About | Prajakta Mali</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f7fa;
+      color: #2c2c2c;
+      line-height: 1.7;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #1f3c88, #3a6ea5);
+      color: #ffffff;
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      opacity: 0.85;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    /* Cards */
+    .card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    h1, h2 {
+      color: #1f3c88;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-top: 0;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    /* Highlight text */
+    .highlight {
+      font-weight: 600;
+      color: #1f3c88;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 
-<body style="font-family: Arial, sans-serif; margin: 50px; line-height: 1.6;">
+<body>
 
-  <!-- Navigation Menu -->
-  <p>
-    <a href="index.html"><b>Home</b></a> |
-    <a href="about.html">About Me</a> |
-    <a href="projects.html">Projects</a> |
-    <a href="cv.html">CV</a> |
+<header>
+  <h1>About Me</h1>
+  <p>Academic & Professional Background</p>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html"><b>About</b></a>
+    <a href="projects.html">Projects</a>
+    <a href="cv.html">CV</a>
     <a href="contact.html">Contact</a>
-  </p>
+  </nav>
+</header>
 
-  <hr>
+<div class="container">
 
-  <h1>Prajakta Mali</h1>
+  <div class="card">
+    <h1>Prajakta Mali</h1>
+    <p>
+      I am a <span class="highlight">Remote Sensing and GIS Analyst</span> with a strong
+      academic background in geospatial analysis, urban and environmental studies,
+      hydrology, and climate applications.
+    </p>
 
-  <p><b>Hi! I’m Prajakta Mali.</b> Welcome to my research portfolio.</p>
+    <p>
+      I hold a <span class="highlight">Master’s degree in Remote Sensing and GIS</span>
+      from the Indian Institute of Remote Sensing (IIRS), ISRO, specializing in
+      Urban and Regional Studies.
+    </p>
+  </div>
 
-  <p>
-    I am a Remote Sensing and GIS Analyst with a strong academic background
-    in geospatial analysis, urban and environmental studies, hydrology,
-    and climate applications. I hold a Master’s degree in Remote Sensing
-    and GIS from the Indian Institute of Remote Sensing (IIRS), ISRO,
-    specializing in Urban and Regional Studies.
-  </p>
+  <div class="card">
+    <h2>Current Role</h2>
+    <p>
+      Currently, I am working as a
+      <span class="highlight">Young Professional – WebGIS</span> at the
+      Maharashtra Institution for Transformation (MITRA),
+      Government of Maharashtra.
+    </p>
 
-  <p>
-    Currently, I am working as a <b>Young Professional – WebGIS</b> at the
-    Maharashtra Institution for Transformation (MITRA), Government of Maharashtra.
-    My work focuses on urban resilience, infrastructure planning,
-    and WebGIS-based decision support systems.
-  </p>
+    <p>
+      My work focuses on urban resilience, infrastructure planning,
+      and WebGIS-based decision support systems that support
+      data-driven governance and planning.
+    </p>
+  </div>
 
-  <p>
-    Previously, I worked as a <b>Junior Research Fellow at the Indian Institute
-    of Science (IISc), Bengaluru</b>, where I contributed to river basin
-    management, flood inundation mapping using Sentinel-1 SAR data,
-    soil erosion modelling, and climate data analysis using Python.
-  </p>
+  <div class="card">
+    <h2>Previous Experience</h2>
+    <p>
+      Previously, I worked as a
+      <span class="highlight">Junior Research Fellow at IISc, Bengaluru</span>,
+      where I contributed to:
+    </p>
 
-  <p>
-    My research interests include urban flood modelling, hydrological
-    processes, land-use change analysis, climate change impacts,
-    GIS automation, and WebGIS application development.
-  </p>
+    <ul>
+      <li>River basin management</li>
+      <li>Flood inundation mapping using Sentinel-1 SAR data</li>
+      <li>Soil erosion modelling</li>
+      <li>Climate data analysis using Python</li>
+    </ul>
+  </div>
 
-  <p>
-    👉 View my <a href="projects.html">Projects</a> |
+  <div class="card">
+    <h2>Research Interests</h2>
+    <p>
+      Urban flood modelling, hydrological processes, land-use change analysis,
+      climate change impacts, GIS automation, and WebGIS application development.
+    </p>
+  </div>
+
+  <div class="card">
+    👉 Explore my
+    <a href="projects.html">Projects</a> |
     <a href="publications.html">Publications</a> |
     <a href="fieldwork.html">Fieldwork</a>
-  </p>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Prajakta Mali • Research Portfolio
+</footer>
 
 </body>
 </html>
