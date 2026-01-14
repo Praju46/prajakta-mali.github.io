@@ -1,71 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Publications | Prajakta Mali</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f7fa;
+      color: #2c2c2c;
+      line-height: 1.7;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #1f3c88, #3a6ea5);
+      color: #ffffff;
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      opacity: 0.85;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    /* Cards */
+    .card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 35px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    h1, h2 {
+      color: #1f3c88;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    .status {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 4px 10px;
+      font-size: 0.85rem;
+      border-radius: 20px;
+      background: #e8eef8;
+      color: #1f3c88;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 
-<body style="font-family: Arial, sans-serif; margin: 50px; line-height: 1.7;">
+<body>
 
-  <!-- Navigation -->
-  <p>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About Me</a> |
-    <a href="projects.html">Projects</a> |
-    <a href="publications.html"><b>Publications</b></a> |
-    <a href="cv.html">CV</a> |
+<header>
+  <h1>Publications</h1>
+  <p>Peer-Reviewed Articles, Book Chapters & Research Tools</p>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="publications.html"><b>Publications</b></a>
+    <a href="cv.html">CV</a>
     <a href="contact.html">Contact</a>
-  </p>
+  </nav>
+</header>
 
-  <hr>
+<div class="container">
 
-  <h1>Publications & Research Outputs</h1>
+  <div class="card">
+    <h2>Journal Articles</h2>
+    <ul>
+      <li>
+        <b>Mali, P.</b>
+        Urban Flood Extent Delineation using Multi-Polarised Sentinel-1 SAR Data:
+        A Case Study of Mumbai City, India.<br>
+        <i>Journal of the Indian Society of Remote Sensing (ISRS)</i><br>
+        <span class="status">Under Review</span>
+      </li>
 
-  <h2>Journal Articles (Under Review)</h2>
-  <ul>
-    <li>
-      <b>Mali, P.</b>
-      Urban Flood Extent Delineation using Multi-Polarised Sentinel-1 SAR Data:
-      A Case Study of Mumbai City, India.
-      <i>Under Review</i>, Journal of the Indian Society of Remote Sensing (ISRS).
-    </li>
+      <li>
+        <b>Mali, P.</b>
+        Exploring Urban Water Balance Dynamics through
+        Vegetation–Impervious–Soil (VIS) Fraction Mapping and
+        Hydrological Modelling.<br>
+        <i>Urban Science (MDPI)</i><br>
+        <span class="status">Under Review</span>
+      </li>
+    </ul>
+  </div>
 
-    <li>
-      <b>Mali, P.</b>
-      Exploring Urban Water Balance Dynamics through Vegetation–Impervious–Soil
-      Fraction Mapping and Hydrological Modelling.
-      <i>Under Review</i>, <i>Urban Science</i> (MDPI).
-    </li>
-  </ul>
+  <div class="card">
+    <h2>Book Chapters</h2>
+    <ul>
+      <li>
+        <b>Mali, P.</b>
+        Assessment of Land Use Land Cover Change of Visakhapatnam using CA-ANN.<br>
+        In <i>Geospatial Technologies: Environmental and Climate Science Applications</i>,
+        Taylor &amp; Francis.<br>
+        <span class="status">Accepted • Available March 2026</span>
+      </li>
 
-  <h2>Book Chapters</h2>
-  <ul>
-    <li>
-      <b>Mali, P.</b>
-      Assessment of Land Use Land Cover Change of Visakhapatnam using CA-ANN.
-      Book chapter in <i>Geospatial Technologies: Environmental and Climate Science Applications</i>,
-      Taylor &amp; Francis.
-      <i>Accepted</i> — will be available online in <b>March 2026</b>.
-    </li>
+      <li>
+        <b>Mali, P.</b>
+        Fusion-Based Urban Expansion Mapping Using Multi-Source Satellite Data
+        and Cloud Computing Platform.<br>
+        In <i>Multisensor Remote Sensing Data Fusion for Enhanced Earth Observation</i>,
+        Wiley.<br>
+        <span class="status">Under Review</span>
+      </li>
+    </ul>
+  </div>
 
-    <li>
-      <b>Mali, P.</b>
-      Fusion-Based Urban Expansion Mapping Using Multi-Source Satellite Data
-      and Cloud Computing Platform.
-      In <i>Multisensor Remote Sensing Data Fusion for Enhanced Earth Observation</i>,
-      Wiley. <i>Under Review</i>.
-    </li>
-  </ul>
+  <div class="card">
+    <h2>Web Applications & Research Tools</h2>
+    <ul>
+      <li>
+        <b>CMIP6 Climate Data Explorer</b><br>
+        Interactive Google Earth Engine (GEE) web application developed
+        for visualization and exploration of CMIP6 climate model projections.
+        Source code available via GitHub.
+      </li>
+    </ul>
+  </div>
 
-  <h2>Web Applications & Research Tools</h2>
-  <ul>
-    <li>
-      <b>CMIP6 Climate Data Explorer</b> —
-      Developed an interactive Google Earth Engine (GEE) web application
-      for visualization and exploration of CMIP6 climate model projections.
-      Source code available via GitHub repository.
-    </li>
-  </ul>
+</div>
+
+<footer>
+  © 2026 Prajakta Mali • Research Portfolio
+</footer>
 
 </body>
 </html>
