@@ -16,8 +16,8 @@
       --text: #1f2937;
       --muted: #6b7280;
 
-      --primary: #1f3c88;   /* deep blue */
-      --primary2: #2f6fd1;  /* accent blue */
+      --primary: #1f3c88;
+      --primary2: #2f6fd1;
       --border: #e6ebf5;
       --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
 
@@ -34,7 +34,6 @@
       line-height: 1.7;
     }
 
-    /* Header */
     header {
       background: radial-gradient(1200px 450px at 20% 20%, rgba(47,111,209,0.25), transparent 60%),
                   linear-gradient(135deg, #0f2458, #1f3c88, #2f6fd1);
@@ -56,7 +55,6 @@
       font-weight: 400;
     }
 
-    /* Navbar */
     nav {
       margin-top: 18px;
       display: flex;
@@ -82,14 +80,12 @@
       transform: translateY(-1px);
     }
 
-    /* Container */
     .container {
       max-width: 950px;
       margin: auto;
       padding: 34px 18px 54px;
     }
 
-    /* Intro banner box */
     .intro {
       background: linear-gradient(180deg, rgba(31,60,136,0.06), transparent 65%);
       border: 1px solid var(--border);
@@ -99,7 +95,6 @@
       color: var(--muted);
     }
 
-    /* Cards */
     .card {
       background: var(--card);
       border-radius: var(--radius);
@@ -121,9 +116,9 @@
       font-size: 1.35rem;
     }
 
-    .hero h1 {
+    .hero h2 {
       margin: 0 0 10px;
-      font-size: 2rem;
+      font-size: 1.75rem;
       color: var(--primary);
     }
 
@@ -133,7 +128,17 @@
       color: #374151;
     }
 
-    /* Buttons / Links */
+    .highlight {
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+      color: #374151;
+    }
+
     a {
       color: var(--primary);
       text-decoration: none;
@@ -148,7 +153,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-top: 10px;
+      margin-top: 12px;
     }
 
     .btn-link {
@@ -180,10 +185,9 @@
       color: var(--muted);
     }
 
-    /* Mobile */
     @media (max-width: 820px) {
       header h1 { font-size: 2.05rem; }
-      .hero h1 { font-size: 1.75rem; }
+      .hero h2 { font-size: 1.55rem; }
       .card { padding: 20px; }
     }
   </style>
@@ -198,7 +202,7 @@
   <!-- ✅ Navbar with ALL sections -->
   <nav>
     <a href="index.html"><b>Home</b></a>
-    <a href="about.html">About</a>
+    <a href="index.html#about">About</a>
     <a href="projects.html">Projects</a>
     <a href="publications.html">Publications</a>
     <a href="training-certifications.html">Training</a>
@@ -217,37 +221,63 @@
     GIS, hydrology, climate analysis, and WebGIS decision-support systems.
   </div>
 
+  <!-- ✅ HOME / HERO -->
   <div class="card hero">
-    <h1>Hello, I’m Prajakta 👋</h1>
+    <h2>Hello, I’m Prajakta 👋</h2>
     <p>
-      I am a Remote Sensing and GIS Specialist with a strong academic background
+      I am a Remote Sensing and GIS Analyst with a strong academic background
       in geospatial analysis, urban and environmental studies, hydrology,
       and climate applications.
     </p>
   </div>
 
+  <!-- ✅ ABOUT SECTION (merged) -->
+  <div class="card" id="about">
+    <h2>About Me</h2>
+
+    <p>
+      I am a <span class="highlight">Remote Sensing and GIS Analyst</span> with a strong
+      academic background in geospatial analysis, urban and environmental studies,
+      hydrology, and climate applications.
+    </p>
+
+    <p>
+      I hold a <span class="highlight">Master’s degree in Remote Sensing and GIS</span>
+      from the Indian Institute of Remote Sensing (IIRS), ISRO, specializing in
+      Urban and Regional Studies.
+    </p>
+  </div>
+
   <div class="card">
-    <h2>Professional Background</h2>
-
+    <h2>Current Role</h2>
     <p>
-      I hold a Master’s degree in Remote Sensing and GIS from the
-      <b>Indian Institute of Remote Sensing (IIRS), ISRO</b>,
-      specializing in Urban and Regional Studies.
-    </p>
-
-    <p>
-      Currently, I am working as a <b>Young Professional – WebGIS</b> at the
+      Currently, I am working as a
+      <span class="highlight">Young Professional – WebGIS</span> at the
       Maharashtra Institution for Transformation (MITRA),
-      Government of Maharashtra, focusing on urban resilience,
-      infrastructure planning, and WebGIS-based decision support systems.
+      Government of Maharashtra.
     </p>
 
     <p>
-      Previously, I worked as a <b>Junior Research Fellow at IISc, Bengaluru</b>,
-      contributing to river basin management, flood inundation mapping
-      using Sentinel-1 SAR data, soil erosion modelling,
-      and climate data analysis using Python.
+      My work focuses on urban resilience, infrastructure planning,
+      and WebGIS-based decision support systems that support
+      data-driven governance and planning.
     </p>
+  </div>
+
+  <div class="card">
+    <h2>Previous Experience</h2>
+    <p>
+      Previously, I worked as a
+      <span class="highlight">Junior Research Fellow at IISc, Bengaluru</span>,
+      where I contributed to:
+    </p>
+
+    <ul>
+      <li>River basin management</li>
+      <li>Flood inundation mapping using Sentinel-1 SAR data</li>
+      <li>Soil erosion modelling</li>
+      <li>Climate data analysis using Python</li>
+    </ul>
   </div>
 
   <div class="card">
