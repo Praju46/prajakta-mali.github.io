@@ -94,9 +94,15 @@
 
     .project-image img {
       width: 100%;
-      max-width: 700px;
+      max-width: 750px;
       border-radius: 8px;
       box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    }
+
+    .map-caption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 8px;
     }
 
     footer {
@@ -150,15 +156,13 @@
       🔗 <a href="https://github.com/praju46/flood-sar-mumbai" target="_blank">GitHub Repository</a>
     </div>
 
-    <!-- ✅ Only ONE representative map shown (safe for publication) -->
+    <!-- ✅ Only ONE representative map shown -->
     <div class="project-image">
       <a href="assets/images/vv_vh_sub_otsu.png" target="_blank">
         <img src="assets/images/vv_vh_sub_otsu.png" alt="Urban flood extent map - Mumbai (Sentinel-1 SAR)">
       </a>
-
-      <p style="font-size: 0.9rem; color: #555; margin-top: 8px;">
-        <b>Representative Output:</b> Sentinel-1 SAR based flood delineation (VH-VV, VH, VV using Otsu Thresholding).
-        Detailed comparisons and quantitative results are part of a journal manuscript under review.
+      <p class="map-caption">
+        <b>Representative Output:</b> Sentinel-1 SAR based flood delineation (VV–VH subtraction + Otsu thresholding).
       </p>
     </div>
   </div>
@@ -169,7 +173,7 @@
     <p class="project-meta">Hydrodynamic Modelling • Flood Risk</p>
     <p>
       Flood inundation modelling using a 2D Rain-on-Grid hydrodynamic model,
-      analysing long-term flood patterns (1985–2025) to support flood risk assessment.
+      analyzing long-term flood patterns (1985–2025) to support flood risk assessment.
     </p>
     <div class="links">
       🔗 <a href="https://github.com/praju46/flood-inundation-nanded" target="_blank">GitHub Repository</a>
@@ -181,9 +185,8 @@
     <h2>Urban Water Balance Analysis using VIS Fraction Mapping</h2>
     <p class="project-meta">M.Tech Thesis • Urban Hydrology</p>
     <p>
-      Analysis of urban water balance dynamics using
-      Vegetation–Impervious–Soil (VIS) fraction mapping integrated
-      with hydrological modelling.
+      Analysis of urban water balance dynamics using Vegetation–Impervious–Soil (VIS)
+      fraction mapping integrated with hydrological modelling.
     </p>
     <div class="links">
       🔗 <a href="https://github.com/praju46/urban-water-balance" target="_blank">GitHub Repository</a>
@@ -209,11 +212,28 @@
     <h2>Landslide Susceptibility Mapping using AHP</h2>
     <p class="project-meta">Remote Sensing • GIS • Western Ghats</p>
     <p>
-      Landslide susceptibility zonation using Analytical Hierarchy Process (AHP)
-      based on 11 conditioning factors in Raigad and Satara districts.
+      Landslide susceptibility zonation using the Analytical Hierarchy Process (AHP)
+      based on 11 conditioning factors in Raigad and Satara districts, Maharashtra.
     </p>
+
     <div class="links">
       🔗 <a href="https://github.com/praju46/landslide-mapping" target="_blank">GitHub Repository</a>
+    </div>
+
+    <!-- ✅ Raigad map -->
+    <div class="project-image">
+      <a href="assets/images/Raigad_landslide_map.png" target="_blank">
+        <img src="assets/images/Raigad_landslide_map.png" alt="Raigad Landslide Susceptibility Map">
+      </a>
+      <p class="map-caption"><b>Raigad District:</b> Final landslide susceptibility zonation map.</p>
+    </div>
+
+    <!-- ✅ Satara map -->
+    <div class="project-image">
+      <a href="assets/images/final_map_satara.png" target="_blank">
+        <img src="assets/images/final_map_satara.png" alt="Satara Landslide Susceptibility Map">
+      </a>
+      <p class="map-caption"><b>Satara District:</b> Final landslide susceptibility zonation map.</p>
     </div>
   </div>
 
