@@ -115,11 +115,26 @@
     }
 
     .achievement-title {
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 10px;
       font-weight: 800;
       color: var(--primary);
       font-size: 1.05rem;
       margin-bottom: 6px;
+    }
+
+    .icon-badge {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(47,111,209,0.12);
+      border: 1px solid rgba(47,111,209,0.30);
+      font-size: 1.05rem;
+      flex-shrink: 0;
     }
 
     .card p {
@@ -160,7 +175,6 @@
   <h1>Achievements</h1>
   <p>Academic, Competitive & Professional Recognitions</p>
 
-  <!-- ✅ Navbar with ALL sections -->
   <nav>
     <a href="index.html">Home</a>
     <a href="index.html#about">About</a>
@@ -178,62 +192,80 @@
 <div class="container">
 
   <div class="intro">
-    A summary of my academic, competitive, and professional recognitions that reflect my
+    🏅 A summary of my academic, competitive, and professional recognitions that reflect my
     consistent engagement in geospatial research and technical excellence.
   </div>
 
   <div class="card">
-    <span class="achievement-title">GATE – Geomatics Engineering</span>
+    <div class="achievement-title">
+      <span class="icon-badge">📌</span>
+      GATE – Geomatics Engineering
+    </div>
     <p>
       All India Ranks:
       <b>AIR 129 (2023)</b>,
       <b>AIR 189 (2024)</b>,
       <b>AIR 132 (2025)</b>
     </p>
-    <span class="tag">National Level Examination</span>
+    <span class="tag">🏆 National Level Examination</span>
   </div>
 
   <div class="card">
-    <span class="achievement-title">GATE – Civil Engineering</span>
+    <div class="achievement-title">
+      <span class="icon-badge">✅</span>
+      GATE – Civil Engineering
+    </div>
     <p>
       Qualified in <b>2022</b>
     </p>
-    <span class="tag">Engineering Aptitude</span>
+    <span class="tag">📘 Engineering Aptitude</span>
   </div>
 
   <div class="card">
-    <span class="achievement-title">1st Place – B.Tech Project Competition</span>
+    <div class="achievement-title">
+      <span class="icon-badge">🥇</span>
+      1st Place – B.Tech Project Competition
+    </div>
     <p>
       Secured <b>First Place</b> at Shivaji University for the project:
       <i>Water Quality Analysis of the Lower Koyana Basin</i>.
     </p>
-    <span class="tag">Academic Excellence</span>
+    <span class="tag">🎓 Academic Excellence</span>
   </div>
 
   <div class="card">
-    <span class="achievement-title">National Means-Cum-Merit Scholarship</span>
+    <div class="achievement-title">
+      <span class="icon-badge">🎖️</span>
+      National Means-Cum-Merit Scholarship
+    </div>
     <p>
       Awarded with <b>126th District Rank</b>.
     </p>
-    <span class="tag">Merit Scholarship</span>
+    <span class="tag">💡 Merit Scholarship</span>
   </div>
 
   <div class="card">
-    <span class="achievement-title">Wall Painting Competition – IIRS (ISRO)</span>
+    <div class="achievement-title">
+      <span class="icon-badge">🎨</span>
+      Wall Painting Competition – IIRS (ISRO)
+    </div>
     <p>
       Winner of the <b>Wall Painting Competition</b> at the
       Indian Institute of Remote Sensing.
     </p>
-    <span class="tag">Creative Achievement</span>
+    <span class="tag">✨ Creative Achievement</span>
   </div>
 
   <div class="card">
-    <span class="achievement-title">Best Poster Award – INTROMET 2025</span>
+    <div class="achievement-title">
+      <span class="icon-badge">🏅</span>
+      Best Poster Award – INTROMET 2025
+    </div>
     <p>
       Awarded the <b>Best Poster Award</b> under the
       <b>Urban Meteorology</b> theme for the M.Tech research project.
     </p>
-    <span class="tag">Conference Recognition</span>
+    <span class="tag">📍 Conference Recognition</span>
   </div>
 
 </div>
