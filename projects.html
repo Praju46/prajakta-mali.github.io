@@ -52,9 +52,9 @@
     /* Project Card */
     .project-card {
       background: #ffffff;
-      border-radius: 12px;
+      border-radius: 14px;
       padding: 30px;
-      margin-bottom: 40px;
+      margin-bottom: 35px;
       box-shadow: 0 4px 18px rgba(0,0,0,0.08);
     }
 
@@ -78,6 +78,7 @@
 
     .links a {
       display: inline-block;
+      margin-right: 14px;
       margin-top: 10px;
       color: #1f3c88;
       font-weight: 600;
@@ -88,21 +89,43 @@
       text-decoration: underline;
     }
 
+    /* ✅ Image Styling (Formal + Smaller) */
     .project-image {
-      margin-top: 20px;
+      margin-top: 18px;
+      text-align: center;
     }
 
     .project-image img {
       width: 100%;
-      max-width: 750px;
-      border-radius: 8px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+      max-width: 520px; /* ✅ reduced size */
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+      border: 1px solid #e6eaf2;
     }
 
     .map-caption {
       font-size: 0.9rem;
       color: #555;
       margin-top: 8px;
+      text-align: center;
+    }
+
+    .view-btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid #1f3c88;
+      color: #1f3c88;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: 0.2s;
+    }
+
+    .view-btn:hover {
+      background: #1f3c88;
+      color: #ffffff;
     }
 
     footer {
@@ -156,13 +179,14 @@
       🔗 <a href="https://github.com/praju46/flood-sar-mumbai" target="_blank">GitHub Repository</a>
     </div>
 
-    <!-- ✅ Only ONE representative map shown -->
+    <!-- ✅ ONE map (smaller + aesthetic) -->
     <div class="project-image">
-      <a href="assets/images/vv_vh_sub_otsu.png" target="_blank">
-        <img src="assets/images/vv_vh_sub_otsu.png" alt="Urban flood extent map - Mumbai (Sentinel-1 SAR)">
-      </a>
+      <img src="assets/images/vv_vh_sub_otsu.png" alt="Urban flood extent map - Mumbai">
+      <div>
+        <a class="view-btn" href="assets/images/vv_vh_sub_otsu.png" target="_blank">View Full Map</a>
+      </div>
       <p class="map-caption">
-        <b>Representative Output:</b> Sentinel-1 SAR based flood delineation (VV–VH subtraction + Otsu thresholding).
+        <b>Representative Output:</b> VV–VH subtraction + Otsu thresholding.
       </p>
     </div>
   </div>
@@ -222,67 +246,77 @@
 
     <!-- ✅ Raigad map -->
     <div class="project-image">
-      <a href="assets/images/Raigad_landslide_map.png" target="_blank">
-        <img src="assets/images/Raigad_landslide_map.png" alt="Raigad Landslide Susceptibility Map">
-      </a>
-      <p class="map-caption"><b>Raigad District:</b> Final landslide susceptibility zonation map.</p>
+      <img src="assets/images/Raigad_landslide_map.png" alt="Raigad Landslide Susceptibility Map">
+      <div>
+        <a class="view-btn" href="assets/images/Raigad_landslide_map.png" target="_blank">View Full Map</a>
+      </div>
+      <p class="map-caption"><b>Raigad District:</b> Final susceptibility zonation map.</p>
     </div>
 
     <!-- ✅ Satara map -->
     <div class="project-image">
-      <a href="assets/images/final_map_satara.png" target="_blank">
-        <img src="assets/images/final_map_satara.png" alt="Satara Landslide Susceptibility Map">
-      </a>
-      <p class="map-caption"><b>Satara District:</b> Final landslide susceptibility zonation map.</p>
+      <img src="assets/images/final_map_satara.png" alt="Satara Landslide Susceptibility Map">
+      <div>
+        <a class="view-btn" href="assets/images/final_map_satara.png" target="_blank">View Full Map</a>
+      </div>
+      <p class="map-caption"><b>Satara District:</b> Final susceptibility zonation map.</p>
     </div>
   </div>
 
   <!-- PROJECT 6 -->
   <div class="project-card">
     <h2>CMIP6 Climate Data Explorer (Google Earth Engine App)</h2>
-    <p class="project-meta">Climate Change • WebGIS</p>
+    <p class="project-meta">Climate Change • GEE App • Data Visualization</p>
     <p>
-      Interactive Google Earth Engine application for visualization
-      and exploration of CMIP6 climate model projections.
+      Interactive Google Earth Engine application for visualization and exploration
+      of CMIP6 climate model projections and trends across scenarios and time periods.
     </p>
+
     <div class="links">
-      🔗 <a href="https://github.com/praju46/cmip6-explorer" target="_blank">GitHub Repository</a>
+      🔗 <a href="https://github.com/praju46/Google-Earth-Engine-APP-for-CMIP6-data-Explorer" target="_blank">GitHub Repository</a>
+      🌐 <a href="https://ee-prajaktamali1298.projects.earthengine.app/view/cmip6datatrend" target="_blank">Live GEE App</a>
     </div>
   </div>
 
   <!-- PROJECT 7 -->
   <div class="project-card">
-    <h2>GIS-Based Site Suitability Analysis for STPs (MITRA)</h2>
+    <h2>Thermal Plant–STP Proximity Dashboard (MITRA)</h2>
+    <p class="project-meta">GIS • Buffer Analysis • Decision Support Dashboard</p>
     <p>
-      Multi-criteria GIS analysis to identify optimal locations
-      for sewage treatment plants to support urban infrastructure planning.
+      Interactive dashboard developed to identify how many Sewage Treatment Plants (STPs)
+      are available within a <b>50 km buffer</b> of each thermal power plant, supporting
+      the reuse of treated wastewater for industrial water demand.
     </p>
+
     <div class="links">
-      🔗 <a href="https://github.com/praju46/mitra-stp-thermal" target="_blank">GitHub Repository</a>
+      🔗 <a href="https://github.com/praju46/MITRA_STP_Thermal" target="_blank">GitHub Repository</a>
+      🌐 <a href="https://mitrastpthermal-8deuepierpwroix54cpvw6.streamlit.app/" target="_blank">Live Dashboard (Streamlit)</a>
     </div>
   </div>
 
   <!-- PROJECT 8 -->
   <div class="project-card">
     <h2>Change Detection using Machine Learning</h2>
+    <p class="project-meta">Remote Sensing • Machine Learning • LULC Change</p>
     <p>
-      Land-use and land-cover change detection using machine learning
-      techniques applied to multi-temporal satellite imagery.
+      Land-use and land-cover change detection using machine learning techniques
+      applied to multi-temporal satellite imagery.
     </p>
     <div class="links">
-      🔗 <a href="https://github.com/praju46/change-detection-ml" target="_blank">GitHub Repository</a>
+      🔗 <a href="https://github.com/praju46/Change-Detection-Using-Machine-Learning" target="_blank">GitHub Repository</a>
     </div>
   </div>
 
   <!-- PROJECT 9 -->
   <div class="project-card">
-    <h2>Thermal Analysis & Environmental Monitoring (MITRA)</h2>
+    <h2>Drought Analysis using SDCI</h2>
+    <p class="project-meta">Remote Sensing • Drought Monitoring • Indices</p>
     <p>
-      Satellite-based thermal and environmental analysis
-      supporting urban monitoring and planning initiatives.
+      Drought assessment using the Satellite-based Drought Condition Index (SDCI),
+      integrating remote sensing indicators to map drought severity patterns.
     </p>
     <div class="links">
-      🔗 <a href="https://github.com/praju46/mitra-thermal" target="_blank">GitHub Repository</a>
+      🔗 <a href="https://github.com/praju46/Drought-Analysis-using-SDCI" target="_blank">GitHub Repository</a>
     </div>
   </div>
 
