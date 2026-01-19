@@ -10,156 +10,244 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
+    :root {
+      --bg: #f6f8fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+
+      --primary: #1f3c88;    /* deep blue */
+      --primary2: #2f6fd1;   /* accent blue */
+      --border: #e6ebf5;
+      --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #f5f7fa;
-      color: #2c2c2c;
+      background-color: var(--bg);
+      color: var(--text);
       line-height: 1.7;
     }
 
     /* Header */
     header {
-      background: linear-gradient(135deg, #1f3c88, #3a6ea5);
+      background: radial-gradient(1200px 450px at 20% 20%, rgba(47,111,209,0.25), transparent 60%),
+                  linear-gradient(135deg, #0f2458, #1f3c88, #2f6fd1);
       color: #ffffff;
-      padding: 35px 20px;
+      padding: 44px 20px 26px;
       text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
     }
 
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      letter-spacing: 0.4px;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      opacity: 0.92;
+      font-weight: 400;
+    }
+
+    /* Navbar */
     nav {
-      margin-top: 15px;
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
     }
 
     nav a {
       color: #ffffff;
       text-decoration: none;
-      margin: 0 10px;
-      font-weight: 500;
-      display: inline-block;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.15);
+      transition: 0.2s ease;
     }
 
     nav a:hover {
-      opacity: 0.85;
+      background: rgba(255,255,255,0.18);
+      transform: translateY(-1px);
+    }
+
+    nav a b {
+      font-weight: 700;
     }
 
     /* Container */
     .container {
       max-width: 1100px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 34px 18px 54px;
+    }
+
+    .intro {
+      background: linear-gradient(180deg, rgba(31,60,136,0.06), transparent 65%);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 18px;
+      margin-bottom: 20px;
+      color: var(--muted);
     }
 
     /* Project Card */
     .project-card {
-      background: #ffffff;
-      border-radius: 14px;
-      padding: 30px;
-      margin-bottom: 35px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 26px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      transition: 0.2s ease;
     }
 
-    h1 {
-      color: #1f3c88;
-      margin-top: 0;
-      font-size: 2.2rem;
+    .project-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 34px rgba(15, 23, 42, 0.10);
     }
 
-    h2 {
-      color: #1f3c88;
-      margin-top: 0;
-      font-size: 1.5rem;
+    .project-card h2 {
+      margin: 0 0 8px;
+      font-size: 1.35rem;
+      color: var(--primary);
     }
 
     .project-meta {
-      font-size: 0.95rem;
-      color: #555;
-      margin-bottom: 10px;
-    }
-
-    .links a {
       display: inline-block;
-      margin-right: 14px;
-      margin-top: 10px;
-      color: #1f3c88;
-      font-weight: 600;
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 10px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #f8fafc;
+    }
+
+    .project-card p {
+      margin: 10px 0 0;
+      color: #374151;
+    }
+
+    /* Links */
+    .links {
+      margin-top: 12px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      color: var(--primary);
       text-decoration: none;
+      font-weight: 700;
+      font-size: 0.92rem;
+      transition: 0.2s ease;
     }
 
-    .links a:hover {
-      text-decoration: underline;
+    .btn-link:hover {
+      background: rgba(47,111,209,0.08);
+      border-color: rgba(47,111,209,0.25);
+      transform: translateY(-1px);
     }
 
-    /* ✅ Image styling (formal + smaller) */
+    /* Map / Image Blocks */
     .project-image {
-      margin-top: 18px;
+      margin-top: 16px;
       text-align: center;
     }
 
     .project-image img {
       width: 100%;
       max-width: 520px;
-      border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-      border: 1px solid #e6eaf2;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+      background: #fff;
     }
 
     .map-caption {
+      margin-top: 10px;
       font-size: 0.9rem;
-      color: #555;
-      margin-top: 8px;
-      text-align: center;
+      color: var(--muted);
     }
 
     .view-btn {
       display: inline-block;
-      margin-top: 8px;
-      padding: 8px 14px;
-      border-radius: 8px;
-      border: 1px solid #1f3c88;
-      color: #1f3c88;
+      margin-top: 10px;
+      padding: 9px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(47,111,209,0.35);
+      background: rgba(47,111,209,0.10);
+      color: var(--primary);
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 800;
       font-size: 0.9rem;
-      transition: 0.2s;
+      transition: 0.2s ease;
     }
 
     .view-btn:hover {
-      background: #1f3c88;
-      color: #ffffff;
+      background: rgba(47,111,209,0.16);
+      transform: translateY(-1px);
     }
 
-    /* ✅ Side-by-side map grid (Landslide project) */
+    /* Landslide side-by-side */
     .map-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-      margin-top: 18px;
+      gap: 16px;
+      margin-top: 16px;
     }
 
     .map-box {
       text-align: center;
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #fbfcff;
     }
 
     .map-box img {
       width: 100%;
-      max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-      border: 1px solid #e6eaf2;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.07);
     }
 
-    /* ✅ Mobile: landslide maps stack */
-    @media (max-width: 768px) {
-      .map-grid {
-        grid-template-columns: 1fr;
-      }
+    /* Mobile */
+    @media (max-width: 820px) {
+      header h1 { font-size: 2rem; }
+      .project-card { padding: 20px; }
+      .map-grid { grid-template-columns: 1fr; }
+      .project-image img { max-width: 100%; }
     }
 
     footer {
       text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #777;
+      padding: 24px 16px 30px;
+      font-size: 0.92rem;
+      color: var(--muted);
     }
   </style>
 </head>
@@ -186,16 +274,16 @@
 
 <div class="container">
 
-  <p>
-    Below is a selection of academic, research, and applied geospatial projects
-    involving remote sensing, GIS, hydrology, climate analysis, and
-    spatial decision support systems.
-  </p>
+  <div class="intro">
+    Below is a selection of academic, research, and applied geospatial projects involving remote sensing,
+    GIS, hydrology, climate analysis, and spatial decision support systems.
+  </div>
 
   <!-- PROJECT 1 -->
   <div class="project-card">
     <h2>Urban Flood Mapping using Sentinel-1 SAR (Mumbai)</h2>
-    <p class="project-meta">Remote Sensing • SAR • Urban Flooding</p>
+    <span class="project-meta">Remote Sensing • SAR • Urban Flooding</span>
+
     <p>
       Urban flood extent delineation using multi-polarised Sentinel-1 SAR data,
       with automated workflows for flood detection and validation in dense
@@ -203,7 +291,7 @@
     </p>
 
     <div class="links">
-      🔗 <a href="https://github.com/praju46/flood-sar-mumbai" target="_blank">GitHub Repository</a>
+      <a class="btn-link" href="https://github.com/praju46/flood-sar-mumbai" target="_blank">🔗 GitHub Repository</a>
     </div>
 
     <div class="project-image">
@@ -211,67 +299,71 @@
       <div>
         <a class="view-btn" href="assets/images/vv_vh_sub_otsu.png" target="_blank">View Full Map</a>
       </div>
-      <p class="map-caption">
-        <b>Representative Output:</b> VV–VH subtraction + Otsu thresholding.
-      </p>
+      <p class="map-caption"><b>Representative Output:</b> VV–VH subtraction + Otsu thresholding.</p>
     </div>
   </div>
 
   <!-- PROJECT 2 -->
   <div class="project-card">
     <h2>Flood Inundation Modelling using 2D Rain-on-Grid Model (Nanded)</h2>
-    <p class="project-meta">Hydrodynamic Modelling • Flood Risk</p>
+    <span class="project-meta">Hydrodynamic Modelling • Flood Risk</span>
+
     <p>
       Flood inundation modelling using a 2D Rain-on-Grid hydrodynamic model,
       analyzing long-term flood patterns (1985–2025) to support flood risk assessment.
     </p>
+
     <div class="links">
-      🔗 <a href="https://github.com/praju46/flood-inundation-nanded" target="_blank">GitHub Repository</a>
+      <a class="btn-link" href="https://github.com/praju46/flood-inundation-nanded" target="_blank">🔗 GitHub Repository</a>
     </div>
   </div>
 
   <!-- PROJECT 3 -->
   <div class="project-card">
     <h2>Urban Water Balance Analysis using VIS Fraction Mapping</h2>
-    <p class="project-meta">M.Tech Thesis • Urban Hydrology</p>
+    <span class="project-meta">M.Tech Thesis • Urban Hydrology</span>
+
     <p>
       Analysis of urban water balance dynamics using Vegetation–Impervious–Soil (VIS)
       fraction mapping integrated with hydrological modelling.
     </p>
+
     <div class="links">
-      🔗 <a href="https://github.com/praju46/urban-water-balance" target="_blank">GitHub Repository</a>
+      <a class="btn-link" href="https://github.com/praju46/urban-water-balance" target="_blank">🔗 GitHub Repository</a>
     </div>
   </div>
 
   <!-- PROJECT 4 -->
   <div class="project-card">
     <h2>Cauvery River Basin Studies (IISc)</h2>
-    <p class="project-meta">River Basin Management • Flood & Erosion</p>
+    <span class="project-meta">River Basin Management • Flood & Erosion</span>
+
     <p>
       Integrated river basin studies involving flood inundation mapping,
       geomorphological classification, soil erosion modelling (RUSLE),
       climate data analysis, and field validation.
     </p>
+
     <div class="links">
-      🔗 <a href="https://github.com/praju46/iisc-cauvery-basin" target="_blank">GitHub Repository</a>
+      <a class="btn-link" href="https://github.com/praju46/iisc-cauvery-basin" target="_blank">🔗 GitHub Repository</a>
     </div>
   </div>
 
   <!-- PROJECT 5 -->
   <div class="project-card">
     <h2>Landslide Susceptibility Mapping using AHP</h2>
-    <p class="project-meta">Remote Sensing • GIS • Western Ghats</p>
+    <span class="project-meta">Remote Sensing • GIS • Western Ghats</span>
+
     <p>
       Landslide susceptibility zonation using the Analytical Hierarchy Process (AHP)
       based on 11 conditioning factors in Raigad and Satara districts, Maharashtra.
     </p>
 
     <div class="links">
-      🔗 <a href="https://github.com/praju46/landslide-mapping" target="_blank">GitHub Repository</a>
+      <a class="btn-link" href="https://github.com/praju46/landslide-mapping" target="_blank">🔗 GitHub Repository</a>
     </div>
 
     <div class="map-grid">
-
       <div class="map-box">
         <img src="assets/images/Raigad_landslide_map.png" alt="Raigad Landslide Susceptibility Map">
         <div>
@@ -287,29 +379,30 @@
         </div>
         <p class="map-caption"><b>Satara District:</b> Final susceptibility zonation map.</p>
       </div>
-
     </div>
   </div>
 
   <!-- PROJECT 6 -->
   <div class="project-card">
     <h2>CMIP6 Climate Data Explorer (Google Earth Engine App)</h2>
-    <p class="project-meta">Climate Change • GEE App • Data Visualization</p>
+    <span class="project-meta">Climate Change • GEE App • Data Visualization</span>
+
     <p>
       Interactive Google Earth Engine application for visualization and exploration
       of CMIP6 climate model projections and trends across scenarios and time periods.
     </p>
 
     <div class="links">
-      🔗 <a href="https://github.com/praju46/Google-Earth-Engine-APP-for-CMIP6-data-Explorer" target="_blank">GitHub Repository</a>
-      🌐 <a href="https://ee-prajaktamali1298.projects.earthengine.app/view/cmip6datatrend" target="_blank">Live GEE App</a>
+      <a class="btn-link" href="https://github.com/praju46/Google-Earth-Engine-APP-for-CMIP6-data-Explorer" target="_blank">🔗 GitHub Repository</a>
+      <a class="btn-link" href="https://ee-prajaktamali1298.projects.earthengine.app/view/cmip6datatrend" target="_blank">🌐 Live GEE App</a>
     </div>
   </div>
 
   <!-- PROJECT 7 -->
   <div class="project-card">
     <h2>Thermal Plant–STP Proximity Dashboard (MITRA)</h2>
-    <p class="project-meta">GIS • Buffer Analysis • Decision Support Dashboard</p>
+    <span class="project-meta">GIS • Buffer Analysis • Decision Support Dashboard</span>
+
     <p>
       Interactive dashboard developed to identify how many Sewage Treatment Plants (STPs)
       are available within a <b>50 km buffer</b> of each thermal power plant, supporting
@@ -317,34 +410,38 @@
     </p>
 
     <div class="links">
-      🔗 <a href="https://github.com/praju46/MITRA_STP_Thermal" target="_blank">GitHub Repository</a>
-      🌐 <a href="https://mitrastpthermal-8deuepierpwroix54cpvw6.streamlit.app/" target="_blank">Live Dashboard (Streamlit)</a>
+      <a class="btn-link" href="https://github.com/praju46/MITRA_STP_Thermal" target="_blank">🔗 GitHub Repository</a>
+      <a class="btn-link" href="https://mitrastpthermal-8deuepierpwroix54cpvw6.streamlit.app/" target="_blank">🌐 Live Dashboard (Streamlit)</a>
     </div>
   </div>
 
   <!-- PROJECT 8 -->
   <div class="project-card">
     <h2>Change Detection using Machine Learning</h2>
-    <p class="project-meta">Remote Sensing • Machine Learning • LULC Change</p>
+    <span class="project-meta">Remote Sensing • Machine Learning • LULC Change</span>
+
     <p>
       Land-use and land-cover change detection using machine learning techniques
       applied to multi-temporal satellite imagery.
     </p>
+
     <div class="links">
-      🔗 <a href="https://github.com/praju46/Change-Detection-Using-Machine-Learning" target="_blank">GitHub Repository</a>
+      <a class="btn-link" href="https://github.com/praju46/Change-Detection-Using-Machine-Learning" target="_blank">🔗 GitHub Repository</a>
     </div>
   </div>
 
   <!-- PROJECT 9 -->
   <div class="project-card">
     <h2>Drought Analysis using SDCI</h2>
-    <p class="project-meta">Remote Sensing • Drought Monitoring • Indices</p>
+    <span class="project-meta">Remote Sensing • Drought Monitoring • Indices</span>
+
     <p>
       Drought assessment using the Satellite-based Drought Condition Index (SDCI),
       integrating remote sensing indicators to map drought severity patterns.
     </p>
+
     <div class="links">
-      🔗 <a href="https://github.com/praju46/Drought-Analysis-using-SDCI" target="_blank">GitHub Repository</a>
+      <a class="btn-link" href="https://github.com/praju46/Drought-Analysis-using-SDCI" target="_blank">🔗 GitHub Repository</a>
     </div>
   </div>
 
