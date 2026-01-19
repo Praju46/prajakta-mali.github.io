@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Projects | Prajakta Mali</title>
 
@@ -24,9 +24,7 @@
       --radius: 16px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -82,10 +80,6 @@
     nav a:hover {
       background: rgba(255,255,255,0.18);
       transform: translateY(-1px);
-    }
-
-    nav a b {
-      font-weight: 700;
     }
 
     /* Container */
@@ -170,6 +164,45 @@
       background: rgba(47,111,209,0.08);
       border-color: rgba(47,111,209,0.25);
       transform: translateY(-1px);
+    }
+
+    /* ✅ Tags (Technologies + Outcomes) */
+    .tag-section {
+      margin-top: 14px;
+    }
+
+    .tag-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 1px solid var(--border);
+    }
+
+    .tag-tech {
+      background: rgba(47,111,209,0.12);
+      color: var(--primary);
+      border: 1px solid rgba(47,111,209,0.35);
+    }
+
+    .tag-outcome {
+      background: rgba(245, 158, 11, 0.14);
+      color: #92400e;
+      border: 1px solid rgba(245, 158, 11, 0.35);
     }
 
     /* Map / Image Blocks */
@@ -294,6 +327,25 @@
       <a class="btn-link" href="https://github.com/praju46/flood-sar-mumbai" target="_blank">🔗 GitHub Repository</a>
     </div>
 
+    <div class="tag-section">
+      <div class="tag-title">Technologies</div>
+      <div class="tags">
+        <span class="tag tag-tech">Sentinel-1 SAR</span>
+        <span class="tag tag-tech">Google Earth Engine</span>
+        <span class="tag tag-tech">Change Detection</span>
+        <span class="tag tag-tech">Urban Flood Mapping</span>
+      </div>
+    </div>
+
+    <div class="tag-section">
+      <div class="tag-title">Outcomes</div>
+      <div class="tags">
+        <span class="tag tag-outcome">Flood Extent Map</span>
+        <span class="tag tag-outcome">Binary Flood Layer</span>
+        <span class="tag tag-outcome">Automated Workflow</span>
+      </div>
+    </div>
+
     <div class="project-image">
       <img src="assets/images/vv_vh_sub_otsu.png" alt="Urban flood extent map - Mumbai">
       <div>
@@ -316,6 +368,25 @@
     <div class="links">
       <a class="btn-link" href="https://github.com/praju46/flood-inundation-nanded" target="_blank">🔗 GitHub Repository</a>
     </div>
+
+    <div class="tag-section">
+      <div class="tag-title">Technologies</div>
+      <div class="tags">
+        <span class="tag tag-tech">HEC-RAS 2D</span>
+        <span class="tag tag-tech">Rain-on-Grid</span>
+        <span class="tag tag-tech">DEM Processing</span>
+        <span class="tag tag-tech">ArcGIS / QGIS</span>
+      </div>
+    </div>
+
+    <div class="tag-section">
+      <div class="tag-title">Outcomes</div>
+      <div class="tags">
+        <span class="tag tag-outcome">Inundation Maps</span>
+        <span class="tag tag-outcome">Flood Depth Maps</span>
+        <span class="tag tag-outcome">Long-term Analysis (1985–2025)</span>
+      </div>
+    </div>
   </div>
 
   <!-- PROJECT 3 -->
@@ -330,6 +401,25 @@
 
     <div class="links">
       <a class="btn-link" href="https://github.com/praju46/urban-water-balance" target="_blank">🔗 GitHub Repository</a>
+    </div>
+
+    <div class="tag-section">
+      <div class="tag-title">Technologies</div>
+      <div class="tags">
+        <span class="tag tag-tech">VIS Fraction Mapping</span>
+        <span class="tag tag-tech">Hydrological Modeling</span>
+        <span class="tag tag-tech">Remote Sensing</span>
+        <span class="tag tag-tech">GIS Analysis</span>
+      </div>
+    </div>
+
+    <div class="tag-section">
+      <div class="tag-title">Outcomes</div>
+      <div class="tags">
+        <span class="tag tag-outcome">M.Tech Thesis</span>
+        <span class="tag tag-outcome">Urban Water Balance Insights</span>
+        <span class="tag tag-outcome">Model-based Assessment</span>
+      </div>
     </div>
   </div>
 
@@ -347,6 +437,25 @@
     <div class="links">
       <a class="btn-link" href="https://github.com/praju46/iisc-cauvery-basin" target="_blank">🔗 GitHub Repository</a>
     </div>
+
+    <div class="tag-section">
+      <div class="tag-title">Technologies</div>
+      <div class="tags">
+        <span class="tag tag-tech">RUSLE</span>
+        <span class="tag tag-tech">Flood Mapping</span>
+        <span class="tag tag-tech">GIS Analysis</span>
+        <span class="tag tag-tech">Field Validation</span>
+      </div>
+    </div>
+
+    <div class="tag-section">
+      <div class="tag-title">Outcomes</div>
+      <div class="tags">
+        <span class="tag tag-outcome">Basin-scale Assessment</span>
+        <span class="tag tag-outcome">Erosion & Flood Insights</span>
+        <span class="tag tag-outcome">Decision Support Layers</span>
+      </div>
+    </div>
   </div>
 
   <!-- PROJECT 5 -->
@@ -361,6 +470,25 @@
 
     <div class="links">
       <a class="btn-link" href="https://github.com/praju46/landslide-mapping" target="_blank">🔗 GitHub Repository</a>
+    </div>
+
+    <div class="tag-section">
+      <div class="tag-title">Technologies</div>
+      <div class="tags">
+        <span class="tag tag-tech">AHP</span>
+        <span class="tag tag-tech">GIS Weighted Overlay</span>
+        <span class="tag tag-tech">ALOS DEM</span>
+        <span class="tag tag-tech">Sentinel-2 NDVI</span>
+      </div>
+    </div>
+
+    <div class="tag-section">
+      <div class="tag-title">Outcomes</div>
+      <div class="tags">
+        <span class="tag tag-outcome">Susceptibility Zonation</span>
+        <span class="tag tag-outcome">LSI Map</span>
+        <span class="tag tag-outcome">Risk Planning Support</span>
+      </div>
     </div>
 
     <div class="map-grid">
@@ -396,6 +524,25 @@
       <a class="btn-link" href="https://github.com/praju46/Google-Earth-Engine-APP-for-CMIP6-data-Explorer" target="_blank">🔗 GitHub Repository</a>
       <a class="btn-link" href="https://ee-prajaktamali1298.projects.earthengine.app/view/cmip6datatrend" target="_blank">🌐 Live GEE App</a>
     </div>
+
+    <div class="tag-section">
+      <div class="tag-title">Technologies</div>
+      <div class="tags">
+        <span class="tag tag-tech">Google Earth Engine</span>
+        <span class="tag tag-tech">CMIP6</span>
+        <span class="tag tag-tech">Climate Projections</span>
+        <span class="tag tag-tech">Web App</span>
+      </div>
+    </div>
+
+    <div class="tag-section">
+      <div class="tag-title">Outcomes</div>
+      <div class="tags">
+        <span class="tag tag-outcome">Interactive Dashboard</span>
+        <span class="tag tag-outcome">Scenario Visualization</span>
+        <span class="tag tag-outcome">Trend Analysis</span>
+      </div>
+    </div>
   </div>
 
   <!-- PROJECT 7 -->
@@ -413,6 +560,25 @@
       <a class="btn-link" href="https://github.com/praju46/MITRA_STP_Thermal" target="_blank">🔗 GitHub Repository</a>
       <a class="btn-link" href="https://mitrastpthermal-8deuepierpwroix54cpvw6.streamlit.app/" target="_blank">🌐 Live Dashboard (Streamlit)</a>
     </div>
+
+    <div class="tag-section">
+      <div class="tag-title">Technologies</div>
+      <div class="tags">
+        <span class="tag tag-tech">Buffer Analysis (50 km)</span>
+        <span class="tag tag-tech">GIS</span>
+        <span class="tag tag-tech">Python</span>
+        <span class="tag tag-tech">Streamlit</span>
+      </div>
+    </div>
+
+    <div class="tag-section">
+      <div class="tag-title">Outcomes</div>
+      <div class="tags">
+        <span class="tag tag-outcome">Decision Support Tool</span>
+        <span class="tag tag-outcome">STP Availability Insights</span>
+        <span class="tag tag-outcome">Interactive Dashboard</span>
+      </div>
+    </div>
   </div>
 
   <!-- PROJECT 8 -->
@@ -428,6 +594,25 @@
     <div class="links">
       <a class="btn-link" href="https://github.com/praju46/Change-Detection-Using-Machine-Learning" target="_blank">🔗 GitHub Repository</a>
     </div>
+
+    <div class="tag-section">
+      <div class="tag-title">Technologies</div>
+      <div class="tags">
+        <span class="tag tag-tech">Machine Learning</span>
+        <span class="tag tag-tech">Multi-temporal Imagery</span>
+        <span class="tag tag-tech">Remote Sensing</span>
+        <span class="tag tag-tech">Change Detection</span>
+      </div>
+    </div>
+
+    <div class="tag-section">
+      <div class="tag-title">Outcomes</div>
+      <div class="tags">
+        <span class="tag tag-outcome">LULC Change Maps</span>
+        <span class="tag tag-outcome">Classification Outputs</span>
+        <span class="tag tag-outcome">Spatial Analysis</span>
+      </div>
+    </div>
   </div>
 
   <!-- PROJECT 9 -->
@@ -442,6 +627,25 @@
 
     <div class="links">
       <a class="btn-link" href="https://github.com/praju46/Drought-Analysis-using-SDCI" target="_blank">🔗 GitHub Repository</a>
+    </div>
+
+    <div class="tag-section">
+      <div class="tag-title">Technologies</div>
+      <div class="tags">
+        <span class="tag tag-tech">SDCI</span>
+        <span class="tag tag-tech">Remote Sensing Indices</span>
+        <span class="tag tag-tech">Time-series Analysis</span>
+        <span class="tag tag-tech">GIS Mapping</span>
+      </div>
+    </div>
+
+    <div class="tag-section">
+      <div class="tag-title">Outcomes</div>
+      <div class="tags">
+        <span class="tag tag-outcome">Drought Severity Maps</span>
+        <span class="tag tag-outcome">Spatial Patterns</span>
+        <span class="tag tag-outcome">Decision Support Layers</span>
+      </div>
     </div>
   </div>
 
